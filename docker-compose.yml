@@ -1,0 +1,10 @@
+services:
+  study-sprint:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: study-sprint:latest
+    container_name: study-sprint
+    ports:
+      - "8080:80"
+    restart: unless-stopped
